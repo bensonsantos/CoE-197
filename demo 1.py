@@ -56,10 +56,18 @@ class Person:
     def __init__(self, name, age):
         self.name = name
         self.age = age
+
+    def get_name(self):
+        return self.name
     
-    def __str__(self):
+    def get_age(self):
+        return self.age
+
+    def __str__(self)
         return f"{self.name} is {self.age} years old"
 
 p = Person("benson", 6)
 print(p)
+print(p.get_age())
+print(p.get_name())
 
